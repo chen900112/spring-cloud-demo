@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: stock-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://1.15.242.150:8848
+        namespace: 56b17a5f-0aef-4214-b42b-37805467ba0c
+      config:
+        server-addr: http://1.15.242.150:8848
+        namespace: 56b17a5f-0aef-4214-b42b-37805467ba0c
+#        group: DEFAULT_GROUP
+        file-extension: yml
+        shared-configs:
+          - data-id: common.yml
+            refresh: true
+            group: DEFAULT_GROUP
+        extension-configs:

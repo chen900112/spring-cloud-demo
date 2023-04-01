@@ -8,3 +8,4 @@ spring:
       discovery:
         server-addr: http://1.15.242.150:8848
         namespace: 56b17a5f-0aef-4214-b42b-37805467ba0c
+        group: TEST_GROUP
